@@ -19,6 +19,6 @@ public class Amount {
 
         String decimalFormat = new String(new char[decimalCount]).replace("\0", "0");
 
-        return new DecimalFormat(",###." + decimalFormat, decimalFormatSymbols).format(value);
+        return new DecimalFormat(",##0." + decimalFormat, decimalFormatSymbols).format(value);
     }
 }
